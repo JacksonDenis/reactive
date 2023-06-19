@@ -1,0 +1,4 @@
+<form [formGroup]="cadastroForm" (ngSubmit)="submitForm()">
+    <input type="text" formControlName = "fistName">
+    {{ cadastroForm.get('fistName')?.value}}
+</form>
